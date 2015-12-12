@@ -1,0 +1,4 @@
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RadioButtonTheme"
+    android:text="@string/rb_test_text" />
+<!-- From: file:/C:/Users/sshie/AndroidStudioProjects/aeris-android-sdk/AerisMapsLibrary/res/layout/aeris_radio_button.xml --><!-- From: file:/F:/csci571/hw9_android_app/ForecastSearch/app/build/intermediates/exploded-aar/com.hamweather/aeris-maps-library/1.1.1/res/layout/aeris_radio_button.xml -->

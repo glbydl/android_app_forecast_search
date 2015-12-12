@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:id="@+id/data_next_24_hours"
+        android:stretchColumns="1">
+
+    </TableLayout>
+
+</LinearLayout><!-- From: file:/F:/csci571/hw9_android_app/ForecastSearch/app/src/main/res/layout/fragment_next_24_hours.xml -->

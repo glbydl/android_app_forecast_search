@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.wangf.forecastsearch">
+
+    <application
+        tools:replace="android:icon"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDTGA0LU5hBM-jkOodE4RR4g5KGoRiNjqo" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/about_activity" >
+        </activity>
+
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/result_activity" >
+        </activity>
+
+        <activity
+            android:name=".DetailsActivity"
+            android:label="@string/details_activity" >
+        </activity>
+
+        <activity
+            android:name=".MapActivity"
+            android:label="Map" >
+        </activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider1639622966315707"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+
+    </application>
+
+    <!-- Internet is required to make calls to the Aeris API -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Aeris Library uses the network state to determine if network is availabe to make calls  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Google maps requries this now with tiles -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- (Optional If you want location services to be used as well) -->
+    <uses-permission android:name="android.permission.ACCESS_COURSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>

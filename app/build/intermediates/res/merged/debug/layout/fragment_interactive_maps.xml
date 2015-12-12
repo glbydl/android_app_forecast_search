@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llLegendHolder"
+    android:orientation="vertical" >
+
+    <com.hamweather.aeris.maps.AerisMapView
+        android:id="@+id/aerisfragment_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.hamweather.aeris.maps.AerisMapView>
+
+</LinearLayout><!-- From: file:/F:/csci571/hw9_android_app/ForecastSearch/app/src/main/res/layout/fragment_interactive_maps.xml -->
